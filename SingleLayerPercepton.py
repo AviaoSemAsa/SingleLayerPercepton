@@ -45,8 +45,6 @@ class percepton():
                     self.setWeights(((self.getWeights()[j]) + (LearningRate*self.getInputs()[i][j]*mistake)), j)
             print("Number of mistakes: " + str(FinalMistake))
 
-#class trained for OR operation
-
 OR = percepton(np.array([[0,0],[0,1], [1,0], [1,1]]), np.array([0,1,1,1]))
 OR.train(0.1)
 print("Neural Network trained")
